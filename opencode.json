@@ -1,5 +1,11 @@
 {
 	"$schema": "https://opencode.ai/config.json",
+	"permission": {
+		"bash": "ask",
+		"edit": "ask",
+		"write": "ask"
+	},
+	"instructions": ["rules/**/*.md"],
 	"mcp": {
 		"svelte": {
 			"type": "remote",

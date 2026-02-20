@@ -1,23 +1,23 @@
-You are able to use the Svelte MCP server, where you have access to comprehensive Svelte 5 and SvelteKit documentation. Here's how to use the available tools effectively:
+# AI Rules (Entrypoint)
 
-## Available MCP Tools:
+This file contains the non-negotiable project rules. Additional authoritative rules are loaded via `opencode.json` `instructions`.
 
-### 1. list-sections
+## Precedence
 
-Use this FIRST to discover all available documentation sections. Returns a structured list with titles, use_cases, and paths.
-When asked about Svelte or SvelteKit topics, ALWAYS use this tool at the start of the chat to find relevant sections.
+- Project rules (this repo) override any global/personal rules (e.g., `~/.config/opencode/AGENTS.md`) when they conflict.
+- If modular rule files conflict with this entrypoint, this `AGENTS.md` wins.
 
-### 2. get-documentation
+## Loaded Rule Modules
 
-Retrieves full documentation content for specific sections. Accepts single or multiple sections.
-After calling the list-sections tool, you MUST analyze the returned documentation sections (especially the use_cases field) and then use the get-documentation tool to fetch ALL documentation sections that are relevant for the user's task.
+Rule modules under `rules/` are treated as AI rules and are loaded into context via `opencode.json` `instructions`.
 
-### 3. svelte-autofixer
+## Non-Negotiable Rules
 
-Analyzes Svelte code and returns issues and suggestions.
-You MUST use this tool whenever writing Svelte code before sending it to the user. Keep calling it until no issues or suggestions are returned.
+- NEVER execute a plan or implement changes without explicit user approval ("yes", "go ahead", "proceed", etc.).
+- Do not relax security/safety constraints without explicit user instruction.
 
-### 4. playground-link
+## Response Style and Token Efficiency
 
-Generates a Svelte Playground link with the provided code.
-After completing the code, ask the user if they want a playground link. Only call this tool after user confirmation and NEVER if code was written to files in their project.
+- Default to short, direct answers that address only the user's explicit question.
+- Avoid unsolicited tangents, broad comparisons, or extra options unless requested.
+- Expand only when the user explicitly asks (e.g., "expand", "deep dive").
