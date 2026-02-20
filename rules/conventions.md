@@ -61,6 +61,19 @@ Group imports in this order:
 - Follow TailwindCSS v4 conventions
 - Custom styles can be added in `src/routes/layout.css`
 
+### Fluid TailwindCSS (`fluid-tailwindcss`)
+
+- Prefer `fl-*` utilities for values that should scale smoothly across viewport widths (e.g. headings, hero padding, section spacing, etc)
+- Prefer breakpoint variants (`sm:`, `md:`, `lg:`, etc) for layout changes and discrete jumps (grid/columns, visibility, nav behavior, etc)
+- Avoid mixing conflicting fluid and breakpoint utilities on the same property unless intentional (e.g. `fl-text-2xl/5xl` plus `md:text-4xl`)
+
+Examples:
+
+```html
+<h1 class="fl-leading-tight/none fl-text-3xl/6xl">Title</h1>
+<section class="fl-py-8/16 fl-px-4/10">...</section>
+```
+
 ## Project Structure
 
 ```
