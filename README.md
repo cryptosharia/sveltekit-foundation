@@ -45,6 +45,16 @@ From the repo root, run:
 opencode
 ```
 
+## Environment Variables
+
+This repo expects a local `.env` file. Start from the example and review it before running the app:
+
+```sh
+cp .env.example .env
+```
+
+> Note: variables prefixed with `PUBLIC_` are supposed to be exposed to the client - do not put secrets there.
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install`, start a development server:
