@@ -13,7 +13,12 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"test": "npm run test:unit -- --run",
+		"gen:api-types:preview": "openapi-typescript \"https://preview.api.cryptosharia.id/openapi.json\" -o src/lib/api/cs-api-types.ts",
+		"gen:api-types:prod": "openapi-typescript \"https://api.cryptosharia.id/openapi.json\" -o src/lib/api/cs-api-types.ts"
+	},
+	"dependencies": {
+		"openapi-fetch": "^0.17.0"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.2",
@@ -27,7 +32,9 @@
 		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.14.0",
+		"fluid-tailwindcss": "^1.0.5",
 		"globals": "^17.3.0",
+		"openapi-typescript": "^7.13.0",
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.4.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
@@ -37,7 +44,6 @@
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.54.0",
 		"vite": "^7.3.1",
-		"vitest": "^4.0.18",
-		"fluid-tailwindcss": "^1.0.5"
+		"vitest": "^4.0.18"
 	}
 }

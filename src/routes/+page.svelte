@@ -1,5 +1,5 @@
 <main
-	class="relative min-h-screen overflow-hidden bg-gradient-to-b from-slate-50 to-white text-slate-900"
+	class="relative min-h-screen overflow-hidden bg-linear-to-b from-slate-50 to-white text-slate-900"
 >
 	<div
 		class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(900px_600px_at_20%_10%,rgba(14,165,233,0.14),transparent_70%),radial-gradient(700px_500px_at_80%_20%,rgba(34,197,94,0.12),transparent_65%),radial-gradient(700px_500px_at_50%_90%,rgba(99,102,241,0.10),transparent_60%)]"
