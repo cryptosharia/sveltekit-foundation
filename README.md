@@ -1,26 +1,53 @@
-# sv
+# SvelteKit Foundation
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Internal SvelteKit foundation repo for the CryptoSharia (PT Kripto Syariah Indonesia) dev team.
+Use this as the starting point for new SvelteKit projects, with shared tooling and conventions
+preconfigured.
 
-## Creating a project
+Quickstart: `npm install` then `npm run dev`.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Start a new project
+
+Preferred:
+
+- Use this repository as a template (GitHub: "Use this template" -> new repo with fresh git history)
+
+Alternative (clone):
 
 ```sh
-# create a new project
-npx sv create my-app
+git clone <repo-url> cryptosharia-app
+cd cryptosharia-app
+
+# detach from the foundation repo history
+rm -rf .git
+git init
+
+npm install
+npm run dev
 ```
 
-To recreate this project with the same configuration:
+## Project rules
+
+Rules and conventions live under `rules/`.
+They are also loaded by OpenCode (see `opencode.json`) so the coding agent follows the same
+conventions when planning and implementing changes.
+
+## Use OpenCode
+
+When working on changes in this repo, prefer using OpenCode so it can:
+
+- apply the project rules in `rules/`
+- follow the planning workflow under `planning/`
+
+From the repo root, run:
 
 ```sh
-# recreate this project
-npx sv create --template minimal --types ts --add prettier eslint vitest="usages:unit" tailwindcss="plugins:typography" mcp="ide:opencode+setup:remote" --install npm .
+opencode
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `npm install`, start a development server:
 
 ```sh
 npm run dev
@@ -38,5 +65,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

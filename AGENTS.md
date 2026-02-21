@@ -20,4 +20,4 @@ Rule modules under `rules/` are treated as AI rules and are loaded into context 
 
 - Default to short, direct answers that address only the user's explicit question.
 - Avoid unsolicited tangents, broad comparisons, or extra options unless requested.
-- Expand only when the user explicitly asks (e.g., "expand", "deep dive").
+- Expand only when the user explicitly asks (e.g., "expand", "deep dive", "more details", etc).
