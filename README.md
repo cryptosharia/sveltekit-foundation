@@ -40,7 +40,7 @@ To verify it works, see `docs/verify-opencode-remote-config.md`.
 
 When working on changes in this repo, prefer using OpenCode so it can:
 
-- apply the project rules in `.agents/rules/`
+- load the shared CryptoSharia AI foundation (rules, skills, etc)
 - follow the planning workflow under `planning/`
 
 From the repo root, run:
