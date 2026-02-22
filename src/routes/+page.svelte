@@ -34,12 +34,10 @@ git init</code
 			<div class="rounded-2xl border border-slate-200/70 bg-white/70 p-6 shadow-sm backdrop-blur">
 				<h2 class="text-base font-semibold tracking-tight">Use OpenCode</h2>
 				<p class="mt-2 text-sm leading-relaxed text-slate-700">
-					OpenCode loads team rules from <code class="font-mono text-[0.95em] font-bold"
-						>.agents/rules/</code
+					OpenCode syncs team rules and skills from
+					<code class="font-mono text-[0.95em] font-bold">cryptosharia/ai-foundation-sveltekit</code
 					>
-					(see
-					<code class="font-mono text-[0.95em]">opencode.json</code>) and follows the planning
-					workflow.
+					via <code class="font-mono text-[0.95em]">.opencode/remote-config.json</code>.
 				</p>
 				<pre class="mt-4 overflow-x-auto rounded-xl bg-slate-950 p-4 text-xs text-slate-100"><code
 						>opencode</code
@@ -47,48 +45,13 @@ git init</code
 			</div>
 		</section>
 
-		<section
-			class="mt-6 rounded-2xl border border-slate-200/70 bg-white/70 p-6 shadow-sm backdrop-blur"
-		>
-			<h2 class="text-base font-semibold tracking-tight">Common Commands</h2>
-			<div class="mt-4 grid gap-3 md:grid-cols-2">
-				<div class="rounded-xl border border-slate-200 bg-white px-4 py-3">
-					<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">Dev</p>
-					<pre
-						class="mt-1 overflow-x-auto rounded-lg bg-slate-950 px-3 py-2 text-xs text-slate-100"><code
-							>npm run dev</code
-						></pre>
-				</div>
-				<div class="rounded-xl border border-slate-200 bg-white px-4 py-3">
-					<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">Check</p>
-					<pre
-						class="mt-1 overflow-x-auto rounded-lg bg-slate-950 px-3 py-2 text-xs text-slate-100"><code
-							>npm run check</code
-						></pre>
-				</div>
-				<div class="rounded-xl border border-slate-200 bg-white px-4 py-3">
-					<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">Lint</p>
-					<pre
-						class="mt-1 overflow-x-auto rounded-lg bg-slate-950 px-3 py-2 text-xs text-slate-100"><code
-							>npm run lint</code
-						></pre>
-				</div>
-				<div class="rounded-xl border border-slate-200 bg-white px-4 py-3">
-					<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">Format</p>
-					<pre
-						class="mt-1 overflow-x-auto rounded-lg bg-slate-950 px-3 py-2 text-xs text-slate-100"><code
-							>npm run format</code
-						></pre>
-				</div>
-			</div>
-		</section>
-
 		<section class="mt-6 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
 			<div class="rounded-2xl border border-slate-200/70 bg-white/70 p-5 shadow-sm backdrop-blur">
-				<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">Rules</p>
-				<p class="mt-1 font-mono text-sm font-bold">.agents/rules/</p>
+				<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">AI Foundation</p>
+				<p class="mt-1 font-mono text-sm font-bold">cryptosharia/ai-foundation-sveltekit</p>
 				<p class="mt-2 leading-relaxed">
-					BFF boundary, planning workflow, repo conventions, etc live here.
+					Team-wide rules, skills, etc maintained centrally and synced automatically when you start
+					OpenCode.
 				</p>
 			</div>
 			<div class="rounded-2xl border border-slate-200/70 bg-white/70 p-5 shadow-sm backdrop-blur">
