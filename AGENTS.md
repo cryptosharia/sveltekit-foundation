@@ -9,7 +9,7 @@ This file contains the non-negotiable project rules. Additional authoritative ru
 
 ## Loaded Rule Modules
 
-Rule modules under `rules/` are treated as AI rules and are loaded into context via `opencode.json` `instructions`.
+Rule modules under `.agents/rules/` are treated as AI rules and are loaded into context via `opencode.json` `instructions`.
 
 ## Non-Negotiable Rules
 

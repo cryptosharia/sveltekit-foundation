@@ -5,7 +5,7 @@
 		"edit": "ask",
 		"write": "ask"
 	},
-	"instructions": ["rules/**/*.md"],
+	"instructions": [".agents/rules/**/*.md"],
 	"mcp": {
 		"svelte": {
 			"type": "remote",

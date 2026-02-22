@@ -35,7 +35,7 @@ git init</code
 				<h2 class="text-base font-semibold tracking-tight">Use OpenCode</h2>
 				<p class="mt-2 text-sm leading-relaxed text-slate-700">
 					OpenCode loads team rules from <code class="font-mono text-[0.95em] font-bold"
-						>rules/</code
+						>.agents/rules/</code
 					>
 					(see
 					<code class="font-mono text-[0.95em]">opencode.json</code>) and follows the planning
@@ -86,7 +86,7 @@ git init</code
 		<section class="mt-6 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
 			<div class="rounded-2xl border border-slate-200/70 bg-white/70 p-5 shadow-sm backdrop-blur">
 				<p class="text-xs font-medium tracking-wide text-slate-500 uppercase">Rules</p>
-				<p class="mt-1 font-mono text-sm font-bold">rules/</p>
+				<p class="mt-1 font-mono text-sm font-bold">.agents/rules/</p>
 				<p class="mt-2 leading-relaxed">
 					BFF boundary, planning workflow, repo conventions, etc live here.
 				</p>

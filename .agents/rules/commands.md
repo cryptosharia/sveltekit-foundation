@@ -1,4 +1,4 @@
-# Project Commands
+# Project Common Commands
 
 ## Development
 
@@ -9,7 +9,6 @@
 ## Quality Assurance
 
 - `npm run check` - Run TypeScript type checking
-- `npm run check:watch` - Watch mode for type checking
 - `npm run lint` - Run Prettier + ESLint checks
 - `npm run format` - Auto-format all files
 

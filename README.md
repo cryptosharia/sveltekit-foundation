@@ -28,7 +28,7 @@ npm run dev
 
 ## Project rules
 
-Rules and conventions live under `rules/`.
+Rules and conventions live under `.agents/rules/`.
 They are also loaded by OpenCode (see `opencode.json`) so the coding agent follows the same
 conventions when planning and implementing changes.
 
