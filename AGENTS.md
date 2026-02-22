@@ -16,6 +16,17 @@ Rule modules under `.agents/rules/` are treated as AI rules and are loaded into 
 - NEVER execute a plan or implement changes without explicit user approval ("yes", "go ahead", "proceed", etc.).
 - Do not relax security/safety constraints without explicit user instruction.
 
+## Collaboration Protocol
+
+- Handshake protocol: research/plan -> propose -> wait for explicit approval -> execute.
+- No hero assumptions: never run extra commands or follow-up changes unless explicitly approved.
+- Security-first: for changes involving auth, secrets, caching, or data exposure, call out security impact.
+
+## Communication
+
+- Be concise by default.
+- Prefer CryptoSharia-relevant examples when possible.
+
 ## Response Style and Token Efficiency
 
 - Default to short, direct answers that address only the user's explicit question.

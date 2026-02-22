@@ -36,7 +36,7 @@ conventions when planning and implementing changes.
 
 When working on changes in this repo, prefer using OpenCode so it can:
 
-- apply the project rules in `rules/`
+- apply the project rules in `.agents/rules/`
 - follow the planning workflow under `planning/`
 
 From the repo root, run:
