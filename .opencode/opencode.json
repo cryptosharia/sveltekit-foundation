@@ -5,7 +5,7 @@
 		"edit": "ask",
 		"write": "ask"
 	},
-	"instructions": [".agents/rules/**/*.md"],
+	"plugin": ["@jgordijn/opencode-remote-config"],
 	"mcp": {
 		"svelte": {
 			"type": "remote",

@@ -1,34 +1,12 @@
-# AI Rules (Entrypoint)
+# CryptoSharia AI Foundation (Project)
 
-This file contains the non-negotiable project rules. Additional authoritative rules are loaded via `opencode.json` `instructions`.
+This project uses the shared CryptoSharia AI foundation synced from:
 
-## Precedence
+- `https://github.com/cryptosharia/ai-foundation-sveltekit`
 
-- Project rules (this repo) override any global/personal rules (e.g., `~/.config/opencode/AGENTS.md`) when they conflict.
-- If modular rule files conflict with this entrypoint, this `AGENTS.md` wins.
+See:
 
-## Loaded Rule Modules
+- `.opencode/opencode.json`
+- `.opencode/remote-config.json`
 
-Rule modules under `.agents/rules/` are treated as AI rules and are loaded into context via `opencode.json` `instructions`.
-
-## Non-Negotiable Rules
-
-- NEVER execute a plan or implement changes without explicit user approval ("yes", "go ahead", "proceed", etc.).
-- Do not relax security/safety constraints without explicit user instruction.
-
-## Collaboration Protocol
-
-- Handshake protocol: research/plan -> propose -> wait for explicit approval -> execute.
-- No hero assumptions: never run extra commands or follow-up changes unless explicitly approved.
-- Security-first: for changes involving auth, secrets, caching, or data exposure, call out security impact.
-
-## Communication
-
-- Be concise by default.
-- Prefer CryptoSharia-relevant examples when possible.
-
-## Response Style and Token Efficiency
-
-- Default to short, direct answers that address only the user's explicit question.
-- Avoid unsolicited tangents, broad comparisons, or extra options unless requested.
-- Expand only when the user explicitly asks (e.g., "expand", "deep dive", "more details", etc).
+To add project-specific rules/skills/etc, keep them in this repo (and prefer local overrides rather than changing the foundation for one-off needs).

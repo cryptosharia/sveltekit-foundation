@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/jgordijn/opencode-remote-config/main/remote-skills.schema.json",
+	"installMethod": "copy",
+	"repositories": [
+		{
+			"url": "https://github.com/cryptosharia/ai-foundation-sveltekit.git",
+			"ref": "main",
+			"instructions": "*",
+			"skills": "*",
+			"agents": "*",
+			"commands": "*",
+			"plugins": "*"
+		}
+	]
+}

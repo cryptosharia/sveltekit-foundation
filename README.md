@@ -28,9 +28,13 @@ npm run dev
 
 ## Project rules
 
-Rules and conventions live under `.agents/rules/`.
-They are also loaded by OpenCode (see `opencode.json`) so the coding agent follows the same
-conventions when planning and implementing changes.
+This repo consumes the shared CryptoSharia AI foundation via OpenCode remote config.
+
+- Config lives in `.opencode/remote-config.json`
+- The foundation is synced and loaded on OpenCode startup (cached by `@jgordijn/opencode-remote-config`)
+- Local items (if any) override remote items with the same name
+
+To verify it works, see `docs/verify-opencode-remote-config.md`.
 
 ## Use OpenCode
 
